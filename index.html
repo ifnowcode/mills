@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name=viewport content='width=device-width,initial-scale=1,user-scalable=0'> 
+  <!--  Nine Men's Morris (vs AI) -->
+  <title>🔴 The Mill Game</title>
+  <style>
+    body {
+      background: #222;
+      color: #eee;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 10px;
+    }
+    canvas {
+      background: #1b1b1b;
+      border: 4px solid #000;
+      margin-bottom: 10px;
+    }
+    #controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button id="resetBtn">New Game</button>
+    <span id="status"></span>
+  </div>
+  <canvas id="board" width="600" height="600"></canvas>
+
+  <script src="mills.js"></script>
+</body>
+</html>
